@@ -1,0 +1,53 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Inspector - {{ metadata.name }}{% endblock %}
+
+{% block body %}
+
+    <h4>{{ metadata.name }}</h4>
+    <a href="{{ path('_home') }}">Home</a>
+    <br/>
+
+    <h4>Proprietà</h4>
+    <table border="0">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Tipo</th>
+                <th>Nullable</th>
+                <th>Default</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for key, value in properties %}
+                <tr>
+                    <td>{{ value.0 }}</td>
+                    <td>{{ value.1 }}</td>
+                    <td>{{ value.2 }}</td>
+                    <td>{{ value.3 }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <h4>Associazioni</h4>
+    <table border="0">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Destinazione</th>
+                <th>Tipo</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for key, value in associations %}
+                <tr>
+                    <td>{{ value.0 }}</td>
+                    <td><a href="{{ path('detail', {'entityName': value.1 }) }}">{{ value.1 }}</a></td>
+                    <td>{{ value.2 }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+            
+{% endblock %}

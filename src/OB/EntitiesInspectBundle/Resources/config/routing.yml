@@ -1,0 +1,7 @@
+_home:
+    path:     /home
+    defaults: { _controller: EntitiesInspectBundle:Inspector:home }
+
+detail:
+    path:     /detail/{entityName}
+    defaults: { _controller: EntitiesInspectBundle:Inspector:detail }

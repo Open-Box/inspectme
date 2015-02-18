@@ -1,0 +1,15 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}EntitiesInspectBundle:Inspector:Home{% endblock %}
+
+{% block body %}
+    <ul>
+        {% for key, value in metadata %}
+            <li>
+                <a href="{{ path('detail', {'entityName': value.name}) }}">
+                    {{ value.name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

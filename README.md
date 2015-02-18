@@ -3,7 +3,7 @@ InspectMe
 
 Doctrine & Sf2 entities mapping inspector.
 
-This demo app shows the functionalities of <EnitiesInspectBundle>, the bundle
+This demo app shows the functionalities of <EntitiesInspectBundle>, the bundle
 inspects Doctrine2 mapping metadata and provides a web interface to view them.
 
 Viewing the mapping metadata is esay as pointing your browser to:
@@ -15,7 +15,7 @@ its members, along with type and default value informations.
 
 At the bottom of the page you will get all informations about related entities.
 
-<EnitiesInspectBundle> was written to accomplish the task of showing an app entities
+<EntitiesInspectBundle> was written to accomplish the task of showing an app entities
 as easy as possible.
 
 Future integrations may (@todos!) may include:
