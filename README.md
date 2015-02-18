@@ -18,7 +18,7 @@ At the bottom of the page you will get all informations about related entities.
 _EntitiesInspectBundle_ was written to accomplish the task of showing an app entities
 as easy as possible.
 
-Future integrations may (@todos!) may include:
+Future integrations (@todos!) may include:
 
 * Web interface theming
 * Translations
