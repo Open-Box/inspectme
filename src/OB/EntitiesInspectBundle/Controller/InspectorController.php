@@ -33,7 +33,7 @@ class InspectorController extends Controller
             $default = isset($fieldMapping['options']['default']) ? $fieldMapping['options']['default'] : 'Nessuno';
 
             /**
-             * @todo Migliorare per il casting dei booleani
+             * @todo Fix with a better boolean casting
              */
             $default = !$default ? 0 : $default;
 
