@@ -1,3 +1,8 @@
+example_entities:
+    resource: "@ExampleEntitiesBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 enities_inspect:
     resource: "@EntitiesInspectBundle/Resources/config/routing.yml"
     prefix:   /inspect

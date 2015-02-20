@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             
             // App bundles
             new OB\EntitiesInspectBundle\EntitiesInspectBundle(),
+            new OB\Example\ExampleEntitiesBundle\ExampleEntitiesBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
